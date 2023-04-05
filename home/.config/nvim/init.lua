@@ -114,11 +114,11 @@ require('lazy').setup({
     },
   },
 
-  { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+  { -- Theme
+    'luisiacc/gruvbox-baby',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'gruvbox-baby'
     end,
   },
 

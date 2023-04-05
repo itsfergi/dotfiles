@@ -186,7 +186,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # manage i3 session
-bindsym $mod+Shift+e exec --no-startup-id i3-nagbar -t warning -f "pango:Hack 9" -m "Do you really want to exit?" -B "    Exit " "i3-msg exit" -B "    Lock " "pkill i3-nagbar && i3lock-fancy -f Source-Sans-Pro" -B "    Reboot " "pkill i3-nagbar && reboot" -B "    Shutdown " "pkill i3-nagbar && shutdown -h now"
+bindsym $mod+Shift+e exec --no-startup-id $($HOME/.local/bin/rofi-power-menu) 
 
 # resize window
 bindsym $mod+r mode "  "
@@ -235,14 +235,14 @@ bar {
     strip_workspace_numbers yes
 
     colors {
-        background  #212121
+        background  #282828
         statusline  #dddddd
         separator   #666666
         # class             border  backgr. text
-        focused_workspace   #2b83a6 #2b83a6 #ffffff
-        active_workspace    #212121 #212121 #ffffff
-        inactive_workspace  #212121 #212121 #86888c
-        urgent_workspace    #d64e4e #d64e4e #ffffff
+        focused_workspace   #7daea3 #7daea3 #282828
+        active_workspace    #7daea3 #7daea3 #282828
+        inactive_workspace  #282828 #282828 #dfbf8e
+        urgent_workspace    #ea6962 #ea6962 #ffffff
         binding_mode        #229c56 #229c56 #ffffff
     }
 }

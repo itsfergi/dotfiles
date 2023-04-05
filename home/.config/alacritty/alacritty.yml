@@ -10,7 +10,7 @@ window:
   decorations: full #Still won't show in a window manger, but will in a desktop environment
 scrolling:
   history: 10000
-  multiplier: 3
+  multiplier: 6
 window.dynamic_title: true
 
 # Font Customization
@@ -24,7 +24,7 @@ font:
   italic:
     family: Hack Nerd Font Mono
     style: Italic
-  size: 10
+  size: 18
   offset:
     x: 0
     y: 0
